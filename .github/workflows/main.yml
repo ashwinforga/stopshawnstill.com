@@ -17,13 +17,13 @@ jobs:
         with:
           node-version: 18.x
       - run: npm i
-      - run: npm run build && ls && cp CNAME public/CNAME
+      - run: npm run build && cp CNAME dist/CNAME
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: crazy-max/ghaction-github-pages@v1.4.0
         with:
           keep_history: false
           target-branch: gh-pages
-          build_dir: public
+          build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
