@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer className='bg-gray-800 text-white py-12'>
       <div className='container mx-auto px-4'>
-        <form onSubmit={handleSubmit} className='max-w-md mx-auto'>
+{/*         <form onSubmit={handleSubmit} className='max-w-md mx-auto'>
           <h3 className='text-3xl font-bold mb-6 text-center'>
             Sign up to receive updates
           </h3>
@@ -43,7 +43,7 @@ const Footer = () => {
             className='w-full bg-red-700 text-white p-3 rounded hover:bg-red-600 transition duration-300'>
             Sign Up
           </button>
-        </form>
+        </form> */}
         <p className='mt-12 text-center text-sm'>
           PAID FOR BY ASHWIN FOR GEORGIA, INC.
         </p>
