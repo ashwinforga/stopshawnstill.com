@@ -9,7 +9,16 @@ const Header = () => {
           <br />
           <span className='text-yellow-300'>SHAWN STILL</span>
         </h1>
-
+        <div className='relative w-full max-w-[50%] mx-auto mb-8 z-20'>
+          <div className='relative pb-[56.25%] h-0 overflow-hidden'>
+            <iframe
+              src='https://www.youtube.com/embed/aA2Meq0koSA'
+              title='Embedded YouTube video'
+              className='absolute top-0 left-0 w-full h-full border-4 border-white shadow-2xl'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+              allowFullScreen></iframe>
+          </div>
+        </div>
         <div className='relative inline-block mb-4'>
           <img
             src={shawnStillImage}
