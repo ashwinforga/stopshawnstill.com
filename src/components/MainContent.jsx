@@ -9,6 +9,47 @@ const Section = ({ title, content }) => (
   </section>
 );
 
+const StolenValorSection = () => {
+  return (
+    <section className='mb-12 bg-red-100 shadow-md rounded-lg p-6 border-2 border-red-700'>
+      <h3 className='text-3xl font-bold mb-4 text-red-800 text-center'>
+        Shawn Still Caught Lying About Military Service!
+      </h3>
+
+      {/* Embedded Video Placeholder */}
+      <div className='relative pb-[56.25%] h-0 overflow-hidden mb-6'>
+        <iframe
+          src='https://www.youtube.com/embed/BwlWaDal-Ec'
+          title='Shawn Still Military Service Lie'
+          className='absolute top-0 left-0 w-full h-full border-4 border-red-700'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowFullScreen></iframe>
+      </div>
+
+      <p className='text-xl font-semibold mb-4 text-center text-red-800'>
+        The Stolen Valor Act of 2013 makes it a crime to profit from claiming
+        false military affiliation.
+      </p>
+
+      <div className='space-y-4 text-lg text-gray-600'>
+        <p>
+          In a leaked recording, Shawn Still was caught trying to bully a real
+          veteran out of running for office by claiming to be a veteran himself
+          - but he never served in the military.
+        </p>
+        <p>
+          Shawn Still is already on trial for 7 felony indictments, but that
+          didn&apos;t stop him from lying about being a veteran.
+        </p>
+        <p className='text-2xl font-bold text-red-800 text-center mt-6'>
+          No one who lies about military service should ever hold elected
+          office. Period.
+        </p>
+      </div>
+    </section>
+  );
+};
+
 const MainContent = () => {
   const sections = [
     {
@@ -38,9 +79,11 @@ const MainContent = () => {
 
   return (
     <main className='container mx-auto px-4 py-12'>
+      <StolenValorSection />
       <h2 className='text-4xl underline font-bold mb-12 text-center text-red-700'>
         SHAWN STILL IS WRONG FOR GEORGIA.
       </h2>
+
       {sections.map((section, index) => (
         <Section key={index} title={section.title} content={section.content} />
       ))}
